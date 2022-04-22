@@ -3,3 +3,4 @@
 
 ## 文件列表
 1、 [更新k8s 集群证书](https://github.com/cnvoid/k8s-tools/blob/master/update_k8s_cert.sh)
+2. [安装 Helm](./get_helm.sh)
