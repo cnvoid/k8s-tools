@@ -18,8 +18,8 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
 install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubeadm"
-install -o root -g root -m 0755 kubectl /usr/local/bin/kubeadm
+install -o root -g root -m 0755 kubeadm /usr/local/bin/kubeadm
 
 
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubelet"
-install -o root -g root -m 0755 kubectl /usr/local/bin/kubelet
+install -o root -g root -m 0755 kubelet /usr/local/bin/kubelet
