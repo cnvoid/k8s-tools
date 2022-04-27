@@ -2,14 +2,14 @@
 ## 安装 docker
  apt install docker.io -y
  
- echo "{
+ echo '{
 	"registry-mirrors": [
 
 		"https://registry.docker-cn.com"
 
 	]
 
-}" > /etc/docker/daemon.json
+}' > /etc/docker/daemon.json
 
 systemctl daemon-reload
 systemctl restart docker
