@@ -3,6 +3,7 @@
  apt install docker.io -y
  
  echo '{
+    "exec-opts": ["native.cgroupdriver=systemd"],
 	"registry-mirrors": [
 
 		"https://registry.docker-cn.com"
