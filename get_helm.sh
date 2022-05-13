@@ -138,10 +138,10 @@ checkHelmInstalledVersion() {
 downloadFile() {
   HELM_DIST="helm-$TAG-$OS-$ARCH.tar.gz"
   DOWNLOAD_URL="https://get.helm.sh/$HELM_DIST"
-  CHECKSUM_URL="$DOWNLOAD_URL.sha256"
+  CHECKSUM_URL="$DOWNLOAD_URL.sha256sum"
   HELM_TMP_ROOT="$(mktemp -dt helm-installer-XXXXXX)"
   HELM_TMP_FILE="$HELM_TMP_ROOT/$HELM_DIST"
-  HELM_SUM_FILE="$HELM_TMP_ROOT/$HELM_DIST.sha256"
+  HELM_SUM_FILE="$HELM_TMP_ROOT/$HELM_DIST.sha256sum"
   echo "Downloading $DOWNLOAD_URL"
   if [ "${HAS_CURL}" == "true" ]; then
     curl -SsL "$CHECKSUM_URL" -o "$HELM_SUM_FILE"
