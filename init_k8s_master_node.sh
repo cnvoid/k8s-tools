@@ -11,7 +11,7 @@ sudo kubeadm reset
 sudo kubeadm init --image-repository='registry.cn-hangzhou.aliyuncs.com/google_containers' --ignore-preflight-errors=NumCPU,Mem --pod-network-cidr=10.88.0.0/16 --v=5
 
 # kubeadm join 10.30.21.143:6443 --token comn2d.501rx32ap2s1alzt \
-        --discovery-token-ca-cert-hash sha256:58801f6d0a7169a8e0ce9f276eda52a3873b95f51942ce5d0e9a3afdd4089a9a 
+#        --discovery-token-ca-cert-hash sha256:58801f6d0a7169a8e0ce9f276eda52a3873b95f51942ce5d0e9a3afdd4089a9a 
 
 echo "export KUBECONFIG=/etc/kubernetes/admin.conf" >> ~/.bash_profile
 

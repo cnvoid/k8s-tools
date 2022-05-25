@@ -16,7 +16,7 @@ echo '{
   "exec-opts": ["native.cgroupdriver=systemd"],
   "registry-mirrors": [
     "https://hub-mirror.c.163.com",
-    "https://mirror.baidubce.com"
+    "https://registry.cn-hangzhou.aliyuncs.com"
   ]
 }' > /etc/docker/daemon.json
 
